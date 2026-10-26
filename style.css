@@ -38,3 +38,22 @@
 .fim-table th {
   background-color: #f2f2f2;
 }
+
+/* 説明文を隠すクラス（見えなくするけど領域やクリック判定は残す） */
+.hidden {
+  color: transparent; /* 文字を透明にする */
+  background-color: #f9f9f9; /* 必要に応じて背景色と同じにして隠す */
+  user-select: none; /* 選択できないようにする */
+  border-radius: 4px;
+  transition: color 0.2s; /* パッと切り替わるのが味気ない場合はふんわり出すことも可能 */
+}
+
+/* ついでに用語やddに「押せそう」な雰囲気を持たせる */
+dt {
+  cursor: pointer;
+  font-weight: bold;
+}
+dd {
+  cursor: pointer;
+  margin-bottom: 10px;
+}

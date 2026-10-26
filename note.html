@@ -1354,31 +1354,35 @@
       <dd class="hidden">各コアが別々の処理を行う（同じ処理を複数のコアが行い、その結果を照合することではない）</dd>
     </div>
     <div class="item">
-      <dt></dt>
-      <dd class="hidden"></dd>
+      <dt>CPU</dt>
+      <dd class="hidden">32ビットCPUよりも、64ビットCPUのほうが処理が高速</dd>
     </div>
     <div class="item">
-      <dt></dt>
-      <dd class="hidden"></dd>
+      <dt>SSD<br>
+      (Solid State Drive)</dt>
+      <dd class="hidden">可動部品がないため、振動や衝撃に強い。SSDは消費電力が少ない</dd>
     </div>
     <div class="item">
-      <dt></dt>
-      <dd class="hidden"></dd>
+      <dt>ディスク容量</dt>
+      <dd class="hidden">CDが約700MB、DVDが約4.7GB、Blu-ray Discが約25GB</dd>
     </div>
     <div class="item">
-      <dt></dt>
-      <dd class="hidden"></dd>
+      <dt>キャッシュメモリ</dt>
+      <dd class="hidden">CPUの内部に搭載されている超高速の記憶装置。キャッシュメモリはCPUと主記憶装置の処理速度の差を埋めるために使われる</dd>
     </div>
     <div class="item">
-      <dt></dt>
-      <dd class="hidden"></dd>
+      <dt>RAM<br>
+      （Random Access Memory）</dt>
+      <dd class="hidden">揮発性メモリの総称</dd>
     </div>
     <div class="item">
-      <dt></dt>
-      <dd class="hidden"></dd>
+      <dt>ROM<br>
+        （Read Only Memory）</dt>
+      <dd class="hidden">不揮発性メモリの総称</dd>
     </div>
     <div class="item">
-      <dt></dt>
+      <dt>DRAM<br>
+      (Dynamic Random Access Memory)</dt>
       <dd class="hidden"></dd>
     </div>
     <div class="item">
@@ -1908,39 +1912,47 @@
 </div>
 
 <script>
-  // ページが完全に読み込まれてから実行する（これでボタン等の取りこぼしがなくなります）
   document.addEventListener("DOMContentLoaded", function() {
     
-    // 1. 全体の一括切り替えボタン
+    // 1. 全体ボタンの設定
     let isShowAll = false;
     const btn = document.getElementById('toggleBtn');
     
     if (btn) {
-      btn.addEventListener('click', function() {
+      // スマホのタッチとPCのクリックの両方に対応
+      const handleToggleAll = function(e) {
+        e.preventDefault(); // タップのズレやダブル発火を防止
         const allDd = document.querySelectorAll('dd');
         isShowAll = !isShowAll;
 
         allDd.forEach(dd => {
           if (isShowAll) {
-            dd.classList.remove('hidden'); // すべて表示
+            dd.classList.remove('hidden');
           } else {
-            dd.classList.add('hidden');    // すべて非表示
+            dd.classList.add('hidden');
           }
         });
 
         btn.textContent = isShowAll ? "すべての説明を隠す" : "すべての説明を表示";
-      });
+      };
+
+      btn.addEventListener('touchend', handleToggleAll, { passive: false });
+      btn.addEventListener('click', handleToggleAll);
     }
 
-    // 2. 個別の用語（dt）をクリックしたときの切り替え
+    // 2. 個別の用語（dt）の設定
     const dts = document.querySelectorAll('dt');
     dts.forEach(dt => {
-      dt.addEventListener('click', function() {
+      const handleToggleDt = function(e) {
+        // 直後のddを取得してクラスを切り替え
         const targetDd = this.nextElementSibling;
         if (targetDd && targetDd.tagName === 'DD') {
           targetDd.classList.toggle('hidden');
         }
-      });
+      };
+
+      // スマホでのタップ対応
+      dt.addEventListener('click', handleToggleDt);
     });
 
   });
