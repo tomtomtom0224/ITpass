@@ -73,7 +73,6 @@
 <dl>
     <div class="item">
       <dt>経営理念</dt>
-  <!-- class="hidden" をつけて最初は隠す -->
       <dd class="hidden">
           企業の存在意義
       </dd>
@@ -95,7 +94,7 @@
     </div>
     <div class="item">
       <dt>グリーンIT</dt>
-      <dd class="hidden">企業の社会的責任</dd>
+      <dd class="hidden">ITを使った環境保護</dd>
     </div>
     <div class="item">
       <dt>ソーシャルビジネス</dt>
@@ -1354,8 +1353,20 @@
       <dd class="hidden">各コアが別々の処理を行う（同じ処理を複数のコアが行い、その結果を照合することではない）</dd>
     </div>
     <div class="item">
-      <dt>CPU</dt>
-      <dd class="hidden">32ビットCPUよりも、64ビットCPUのほうが処理が高速</dd>
+      <dt>レジスタ</dt>
+      <dd class="hidden">32ビットのCPUよりも、64ビットのCPUのほうが処理が高速</dd>
+    </div>
+      <div class="item">
+      <dt>主記憶装置</dt>
+      <dd class="hidden">メインメモリ。電源切れると消滅</dd>
+    </div>
+      <div class="item">
+      <dt>補助記憶装置</dt>
+      <dd class="hidden">HDD、SSD。電源切れても保存</dd>
+    </div>
+    <div class="item">
+      <dt>キャッシュメモリ</dt>
+      <dd class="hidden">CPUの内部に搭載されている超高速の記憶装置。キャッシュメモリはCPUと主記憶装置の処理速度の差を埋めるために使われる</dd>
     </div>
     <div class="item">
       <dt>SSD<br>
@@ -1365,10 +1376,6 @@
     <div class="item">
       <dt>ディスク容量</dt>
       <dd class="hidden">CDが約700MB、DVDが約4.7GB、Blu-ray Discが約25GB</dd>
-    </div>
-    <div class="item">
-      <dt>キャッシュメモリ</dt>
-      <dd class="hidden">CPUの内部に搭載されている超高速の記憶装置。キャッシュメモリはCPUと主記憶装置の処理速度の差を埋めるために使われる</dd>
     </div>
     <div class="item">
       <dt>RAM<br>
@@ -1453,174 +1460,259 @@
       <dt>相対パス</dt>
       <dd class="hidden">カレントディレクトリを基点としてファイルやディレクトリの所在地を示す表記</dd>
     </div>
+    <div class="item">
+      <dt>フルバックアップ</dt>
+      <dd class="hidden">常にすべてのデータをバックアップ</dd>
+    </div>
+    <div class="item">
+      <dt>差分バックアップ</dt>
+      <dd class="hidden">フルバックアップから追加された部分のみをバックアップ</dd>
+    </div>
+    <div class="item">
+      <dt>増分バックアップ</dt>
+      <dd class="hidden">前回のバックアップから追加された部分のみをバックアップ</dd>
+    </div>
+    <div class="item">
+      <dt>レプリケーション</dt>
+      <dd class="hidden">データのレプリカを別のコンピュータに作成してリアルタイムに同期</dd>
+    </div>
+    <div class="item">
+      <dt>アーカイブ</dt>
+      <dd class="hidden">データを保管庫（アーカイブ）にコピーして長期間保存</dd>
+    </div>
+    <div class="item">
+      <dt>ユニバーサルデザイン</dt>
+      <dd class="hidden">年齢、文化、言語、能力の違い、障害の有無に関わらず、できるだけ多くの人が利用できることを目指したデザイン</dd>
+    </div>
+    <div class="item">
+      <dt>アクセシビリティ</dt>
+      <dd class="hidden">高齢者や障碍者を含むすべての人がサービスを制限なく使える度合い</dd>
+    </div>
+    <div class="item">
+      <dt>ユーザビリティ</dt>
+      <dd class="hidden">利用者がストレスを感じずに目標を達成できる度合い</dd>
+    </div>
+    <div class="item">
+      <dt>オープンソースソフトウェア<br>
+      （OSS）</dt>
+      <dd class="hidden">ソースコードが公開されていて改良や再配布が自由にできるソフト</dd>
+    </div>
+
 
 
 
   <h2>13章</h2>
     <div class="item">
-      <dt></dt>
-      <dd class="hidden"></dd>
+      <dt>関係データモデル</dt>
+      <dd class="hidden">データの集まりを表形式で表現する。<br>
+      ・関係データベースは、表の集まり<br>
+      ・表は、行の集まり<br>
+      ・行は、フィールドの集まり</dd>
     </div>
     <div class="item">
-      <dt></dt>
-      <dd class="hidden"></dd>
+      <dt>主キー</dt>
+      <dd class="hidden">同一の値を持つことができない（重複はダメ）<br>
+                         NULLの値を持つことができない（NULLはダメ）<br>
+                         複数の列を組み合わせて設定できる（複合主キー）</dd>
     </div>
     <div class="item">
-      <dt></dt>
-      <dd class="hidden"></dd>
+      <dt>インデックス</dt>
+      <dd class="hidden">データの検索を高速化する</dd>
     </div>
     <div class="item">
-      <dt></dt>
-      <dd class="hidden"></dd>
+      <dt>E-R図<br>
+      (Entity-Relationship Diagram)</dt>
+      <dd class="hidden">データベースを設計するときに、表同士の関連を表す図
+      <figure class="media-figure">
+        <img src="ER図.png" class="side-image">
+      </figure>  </dd>
     </div>
     <div class="item">
-      <dt></dt>
-      <dd class="hidden"></dd>
+      <dt>正規化</dt>
+      <dd class="hidden">データが重複したり、データ更新の際に矛盾が生じたりしないようにすること</dd>
     </div>
     <div class="item">
-      <dt></dt>
-      <dd class="hidden"></dd>
+      <dt>DBMS<br>
+      (DataBase Manegement System)</dt>
+      <dd class="hidden">アプリケーションの要求に応じてDBを操作するシステム<br>
+      データ操作、トランザクション管理、排他制御</dd>
     </div>
     <div class="item">
-      <dt></dt>
-      <dd class="hidden"></dd>
+      <dt>SQL</dt>
+      <dd class="hidden">関係データベースを操作するための言語<br>
+      ・選択とは、表からある特定の行のみを取り出す操作<br>
+      ・射影とは、表からある特定の列のみを取り出す操作<br>
+      ・結合とは、複数の表を1つにする操作</dd>
     </div>
     <div class="item">
-      <dt></dt>
-      <dd class="hidden"></dd>
+      <dt>トランザクション管理</dt>
+      <dd class="hidden">ユーザーがDBMSに対して行う一連の命令を管理する機能</dd>
     </div>
     <div class="item">
-      <dt></dt>
-      <dd class="hidden"></dd>
+      <dt>コミット</dt>
+      <dd class="hidden">トランザクションが正常に完了した際に、データベースの更新内容を確定すること</dd>
     </div>
     <div class="item">
-      <dt></dt>
-      <dd class="hidden"></dd>
+      <dt>ログファイル</dt>
+      <dd class="hidden">データベースの更新履歴を記録したファイル</dd>
     </div>
     <div class="item">
-      <dt></dt>
-      <dd class="hidden"></dd>
+      <dt>排他制御</dt>
+      <dd class="hidden">複数人が同じデータを同時に更新しようとした場合に、ロックを使ってデータに矛盾が生じないようにする機能（データの一貫性を保つ機能）</dd>
+    </div>
+
+
+
+    <h2>14章</h2>
+    <div class="item">
+      <dt>LANとWAN</dt>
+      <dd class="hidden">違いは、電気通信事業者が設置した通信回線を使うか否かである（WANは使う。LANは使わない）</dd>
     </div>
     <div class="item">
-      <dt></dt>
-      <dd class="hidden"></dd>
+      <dt>ルーター</dt>
+      <dd class="hidden">LANやWANを相互接続する機器</dd>
     </div>
     <div class="item">
-      <dt></dt>
-      <dd class="hidden"></dd>
+      <dt>デフォルトゲートウェイ</dt>
+      <dd class="hidden">他のネットワークへの出入口の役割を担っている機器（ルーター）</dd>
     </div>
     <div class="item">
-      <dt></dt>
-      <dd class="hidden"></dd>
+      <dt>ESSID</dt>
+      <dd class="hidden">無線LANのネットワークを識別する文字列</dd>
     </div>
     <div class="item">
-      <dt></dt>
-      <dd class="hidden"></dd>
+      <dt>ESSIDステルス</dt>
+      <dd class="hidden">不正接続のリスクを低減できる</dd>
     </div>
     <div class="item">
-      <dt></dt>
-      <dd class="hidden"></dd>
+      <dt>伝送効率</dt>
+      <dd class="hidden">伝送効率 ＝ 伝送速度 ÷ 回線速度</dd>
     </div>
     <div class="item">
-      <dt></dt>
-      <dd class="hidden"></dd>
+      <dt>伝送時間</dt>
+      <dd class="hidden">伝送時間 ＝ データ量 ÷ 伝送速度</dd>
     </div>
     <div class="item">
-      <dt></dt>
-      <dd class="hidden"></dd>
+      <dt>通信プロトコル</dt>
+      <dd class="hidden">メーカーが異なる機器同士でも、お互いに通信できるようにするための約束事である</dd>
     </div>
     <div class="item">
-      <dt></dt>
-      <dd class="hidden"></dd>
+      <dt>SMTP<br>
+      （Simple Mail Transfer Protocol）</dt>
+      <dd class="hidden">電子メールを送信するためのプロトコル</dd>
     </div>
     <div class="item">
-      <dt></dt>
-      <dd class="hidden"></dd>
+      <dt>POP<br>
+      （Post Office Protocol)</dt>
+      <dd class="hidden">電子メールを受信するためのプロトコル</dd>
     </div>
     <div class="item">
-      <dt></dt>
-      <dd class="hidden"></dd>
+      <dt>IMAP<br>
+      （Internet Message Access Protocol）</dt>
+      <dd class="hidden">メールサーバ上で電子メールを閲覧するためのプロトコル</dd>
     </div>
     <div class="item">
-      <dt></dt>
-      <dd class="hidden"></dd>
+      <dt>IPアドレス</dt>
+      <dd class="hidden">コンピュータを識別するための番号</dd>
     </div>
     <div class="item">
-      <dt></dt>
-      <dd class="hidden"></dd>
+      <dt>ポート番号</dt>
+      <dd class="hidden">アプリケーションソフトウェアに割り当てられる情報の出入口を示す値</dd>
     </div>
     <div class="item">
-      <dt></dt>
-      <dd class="hidden"></dd>
+      <dt>MACアドレス</dt>
+      <dd class="hidden">ネットワーク機器ごとに割り当てられる固有の宛先</dd>
     </div>
     <div class="item">
-      <dt></dt>
-      <dd class="hidden"></dd>
+      <dt>ドメイン名</dt>
+      <dd class="hidden">コンピュータやネットワークなどを識別するための名前<br>
+      ドメイン名はネットワーク上のコンピュータを特定するが、URLはそのコンピュータに保存されているフォルダやファイルまで特定する</dd>
     </div>
     <div class="item">
-      <dt></dt>
-      <dd class="hidden"></dd>
+      <dt>DNS<br>
+      （Domain Name System）</dt>
+      <dd class="hidden">ドメイン名とIPアドレスを対応させる仕組みである</dd>
     </div>
     <div class="item">
-      <dt></dt>
-      <dd class="hidden"></dd>
+      <dt>IPv4</dt>
+      <dd class="hidden">32ビットで構成される</dd>
     </div>
     <div class="item">
-      <dt></dt>
-      <dd class="hidden"></dd>
+      <dt>IPv6</dt>
+      <dd class="hidden">128ビットで構成される。IPv6を使うと、IPアドレスの枯渇（不足）を回避できる。<br>
+　　　　　　　　　　　　　IPv6のアドレス総数はIPv4の2^96倍</dd>
     </div>
     <div class="item">
-      <dt></dt>
-      <dd class="hidden"></dd>
+      <dt>NAT<br>
+      （Network Address Translation）</dt>
+      <dd class="hidden">プライベートIPアドレスとグローバルIPアドレスを相互変換する技術である</dd>
     </div>
     <div class="item">
-      <dt></dt>
-      <dd class="hidden"></dd>
+      <dt>DHCP<br>
+      （Dynamic Host Configuration Protocol）</dt>
+      <dd class="hidden">IPアドレスを自動的に取得するためのプロトコルである</dd>
     </div>
     <div class="item">
-      <dt></dt>
-      <dd class="hidden"></dd>
+      <dt>Bcc<br>
+      （Blind Carbon Copy）</dt>
+      <dd class="hidden">Bccに指定したメールアドレスは、他の受信者には通知されない</dd>
     </div>
     <div class="item">
-      <dt></dt>
-      <dd class="hidden"></dd>
+      <dt>RSS<br>
+      （Really Simple Syndication）</dt>
+      <dd class="hidden">Webサイトの見出しやリンク、要約などを記述するフォーマット</dd>
     </div>
     <div class="item">
-      <dt></dt>
-      <dd class="hidden"></dd>
+      <dt>cookie</dt>
+      <dd class="hidden">アクセスしてきたブラウザに、Webサーバからの情報を一時的に保存する仕組み</dd>
     </div>
     <div class="item">
-      <dt></dt>
-      <dd class="hidden"></dd>
+      <dt>MVNO<br>
+      （Mobile Virtual Network Operator）</dt>
+      <dd class="hidden">仮想移動体通信事業者。他社の無線通信インフラを借り受け、通信サービスを行う事業者</dd>
     </div>
     <div class="item">
-      <dt></dt>
-      <dd class="hidden"></dd>
+      <dt>FTTH<br>
+      （Fiber To The Home）</dt>
+      <dd class="hidden">光ファイバを使った家庭向けの通信サービス</dd>
     </div>
     <div class="item">
-      <dt></dt>
-      <dd class="hidden"></dd>
+      <dt>テザリング</dt>
+      <dd class="hidden">スマートフォンをルーターとして利用する</dd>
     </div>
     <div class="item">
-      <dt></dt>
-      <dd class="hidden"></dd>
+      <dt>VoIP<br>
+      （Voice over Internet Protocol）</dt>
+      <dd class="hidden">インターネットを利用して音声通話を行う技術</dd>
     </div>
     <div class="item">
-      <dt></dt>
-      <dd class="hidden"></dd>
+      <dt>BLE<br>
+        （Bluetooth Low Energy）<br>
+      </dt>
+      <dd class="hidden">Bluetoothの仕様の1つで省電力</dd>
     </div>
     <div class="item">
-      <dt></dt>
-      <dd class="hidden"></dd>
+      <dt>LPWA<br>
+         (Low Power, Wide Area)<br>
+      </dt>
+      <dd class="hidden">省電力で広範囲の無線通信。LPWAはBLEよりも通信距離が長く、LTEよりも消費電力が低い
+      <figure class="media-figure">
+        <img src="通信規格.png" class="side-image">
+      </figure>
+      </dd>
     </div>
     <div class="item">
-      <dt></dt>
-      <dd class="hidden"></dd>
+      <dt>マルチホップ</dt>
+      <dd class="hidden">中継（ホップ）を繰り返して広範囲の通信を実現する技術</dd>
     </div>
     <div class="item">
-      <dt></dt>
-      <dd class="hidden"></dd>
+      <dt>エッジコンピューティング</dt>
+      <dd class="hidden">IoT機器の近くにサーバを配置することで応答速度を高める技術</dd>
     </div>
+
+
+
+<h2>15章</h2>    
     <div class="item">
       <dt></dt>
       <dd class="hidden"></dd>
@@ -1910,17 +2002,7 @@
       <dd class="hidden"></dd>
     </div>
     
-  <h2>14章：ネットワーク</h2>
-  <dl>
-    <div class="item">
-      <dt>RSS</dt>
-      <dd class="hidden">Webサイトの見出しやリンク、要約などを記述するフォーマット（Really Simple Syndication）</dd>
-    </div>
-    <div class="item">
-      <dt>Cookie</dt>
-      <dd class="hidden">アクセスしてきたブラウザに、Webサーバからの情報を一時的に保存する仕組み</dd>
-    </div>
-  </dl>
+
 </div>
 
 <script>
