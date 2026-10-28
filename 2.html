@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ja">
+<link rel="stylesheet" href="style.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT要点暗記ノート</title>
+  <style>
+    body {
+      font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", MeiRyo, sans-serif;
+      line-height: 1.6;
+      background-color: #f4f7f6;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+    }
+    
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      border-bottom: 2px solid #8a9aa5;
+      padding-bottom: 10px;
+    }
+    h2 {
+      background-color: #8a9aa5;
+      color: white;
+      padding: 8px 15px;
+      border-radius: 4px;
+      margin-top: 30px;
+      font-size: 1.2rem;
+    }
+    dl {
+      margin: 0;
+      padding: 0;
+    }
+    
+    dt {
+      font-weight: bold;
+      color: #e74c3c;
+      width: 30%;
+      min-width: 200px;
+      padding-right: 10px;
+    }
+    dd {
+      margin: 0;
+      width: 65%;
+      flex-grow: 1;
+    }
+    @media (max-width: 600px) {
+      dt, dd {
+        width: 100%;
+      }
+      dt {
+        color: #d35400;
+        margin-bottom: 4px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+  <h1>ITパス暗記ノート</h1>
+<!-- ノートの上部にボタンを配置 -->
+<div style="margin-bottom: 20px;">
+<button id="toggleBtn">すべての説明を表示</button>
+</div>
+
+<!-- 例：用語リスト構造 -->
+
+  <h2>2章</h2>
+    <div class="item">
+      <dt>著作権</dt>
+      <dd class="hidden">著作権は、著作物を創作した時点で自動的に発生する（役所などへの申請は不要）</dd>
+    </div>
+    <div class="item">
+      <dt>著作権法</dt>
+      <dd class="hidden">著作権法は、本、音楽、写真、美術作品、取扱説明書、プログラム、データベースを保護する<br>
+      プログラム言語、アルゴリズム、プロトコルは、著作権法では保護されない</dd>
+    </div>
+    <div class="item">
+      <dt>特許権</dt>
+      <dd class="hidden">高度な発明に与えられる権利</dd>
+    </div>
+    <div class="item">
+      <dt>実用新案権</dt>
+      <dd class="hidden">高度でない考案に与えられる権利</dd>
+    </div>
+    <div class="item">
+      <dt>意匠権</dt>
+      <dd class="hidden">デザインに与えられる権利</dd>
+    </div>
+    <div class="item">
+      <dt>商標権</dt>
+      <dd class="hidden">マークに与えられる権利</dd>
+    </div>
+    <div class="item">
+      <dt>不正競争防止法</dt>
+      <dd class="hidden">営業秘密を保護する法律</dd>
+    </div>
+    <div class="item">
+      <dt>パブリシティ権</dt>
+      <dd class="hidden">有名人の写真を勝手に撮影し販売することなどを禁止する権利</dd>
+    </div>
+    <div class="item">
+      <dt>クロスライセンス</dt>
+      <dd class="hidden">権利者同士がお互いに使用を許諾すること</dd>
+    </div>
+    <div class="item">
+      <dt>サイバーセキュリティ基本法</dt>
+      <dd class="hidden">サイバー攻撃から国を守るための基本理念を定めた法律<br>
+      対象者は、国全体（国、地方公共団体、企業、国民）である</dd>
+    </div>
+    <div class="item">
+      <dt>不正アクセス禁止法</dt>
+      <dd class="hidden">不正なアクセスを禁止する法律<br>
+      なりすましによるアクセス：他人のIDとパスワードを不正利用して、コンピュータにアクセスすること<br>
+      セキュリティホールからのアクセス：セキュリティホールが悪用されて、コンピュータにアクセスすること</dd>
+    </div>
+    <div class="item">
+      <dt>ウイルス作成罪</dt>
+      <dd class="hidden">コンピュータウイルスを作成、提供、供与、取得、保管する犯罪</dd>
+    </div>
+    <div class="item">
+      <dt>労働基準法</dt>
+      <dd class="hidden">労働時間、休憩時間、休暇など、労働条件の最低基準を定めた法律</dd>
+    </div>
+    <div class="item">
+      <dt>労働者派遣契約</dt>
+      <dd class="hidden">派遣先の企業が労働者に指示を出せる</dd>
+    </div>
+    <div class="item">
+      <dt>請負契約</dt>
+      <dd class="hidden">発注者は請負会社の社員（労働者）に指示は出せない</dd>
+    </div>
+    <div class="item">
+      <dt>フレックスタイム制</dt>
+      <dd class="hidden">始業時間と終業時間を労働者が決められる制度</dd>
+    </div>
+    <div class="item">
+      <dt>裁量労働制</dt>
+      <dd class="hidden">業務の進行方法や勤務時間などを労働者の裁量に委ねる</dd>
+    </div>
+    <div class="item">
+      <dt>コンプライアンス</dt>
+      <dd class="hidden">法令：法律や条例など<br>
+          社内ルール：業務マニュアルなど<br>
+          企業倫理：業務上守らなければいけない道徳や規範など</dd>
+    </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    
+    // 1. 全体ボタンの設定
+    let isShowAll = false;
+    const btn = document.getElementById('toggleBtn');
+    
+    if (btn) {
+      // スマホのタッチとPCのクリックの両方に対応
+      const handleToggleAll = function(e) {
+        e.preventDefault(); // タップのズレやダブル発火を防止
+        const allDd = document.querySelectorAll('dd');
+        isShowAll = !isShowAll;
+
+        allDd.forEach(dd => {
+          if (isShowAll) {
+            dd.classList.remove('hidden');
+          } else {
+            dd.classList.add('hidden');
+          }
+        });
+
+        btn.textContent = isShowAll ? "すべての説明を隠す" : "すべての説明を表示";
+      };
+
+      btn.addEventListener('touchend', handleToggleAll, { passive: false });
+      btn.addEventListener('click', handleToggleAll);
+    }
+
+    // 2. 個別の用語（dt）の設定
+    const dts = document.querySelectorAll('dt');
+    dts.forEach(dt => {
+      const handleToggleDt = function(e) {
+        // 直後のddを取得してクラスを切り替え
+        const targetDd = this.nextElementSibling;
+        if (targetDd && targetDd.tagName === 'DD') {
+          targetDd.classList.toggle('hidden');
+        }
+      };
+
+      // スマホでのタップ対応
+      dt.addEventListener('click', handleToggleDt);
+    });
+
+  });
+</script>
+
+</body>
+</html>

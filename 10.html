@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ja">
+<link rel="stylesheet" href="style.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT要点暗記ノート</title>
+  <style>
+    body {
+      font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", MeiRyo, sans-serif;
+      line-height: 1.6;
+      background-color: #f4f7f6;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+    }
+    
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      border-bottom: 2px solid #8a9aa5;
+      padding-bottom: 10px;
+    }
+    h2 {
+      background-color: #8a9aa5;
+      color: white;
+      padding: 8px 15px;
+      border-radius: 4px;
+      margin-top: 30px;
+      font-size: 1.2rem;
+    }
+    dl {
+      margin: 0;
+      padding: 0;
+    }
+    
+    dt {
+      font-weight: bold;
+      color: #e74c3c;
+      width: 30%;
+      min-width: 200px;
+      padding-right: 10px;
+    }
+    dd {
+      margin: 0;
+      width: 65%;
+      flex-grow: 1;
+    }
+    @media (max-width: 600px) {
+      dt, dd {
+        width: 100%;
+      }
+      dt {
+        color: #d35400;
+        margin-bottom: 4px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+  <h1>ITパス暗記ノート</h1>
+<!-- ノートの上部にボタンを配置 -->
+<div style="margin-bottom: 20px;">
+<button id="toggleBtn">すべての説明を表示</button>
+</div>
+
+<!-- 例：用語リスト構造 -->
+
+<h2>10章</h2>
+    <div class="item">
+      <dt>集中処理</dt>
+      <dd class="hidden">1台の大型コンピュータ（ホストコンピュータ）に複数の端末を接続し、すべての命令をホストコンピュータが処理する</dd>
+    </div>
+    <div class="item">
+      <dt>分散処理</dt>
+      <dd class="hidden">クライアントサーバ：クライアントが出した処理要求でホストが処理。クライアントへの専用ソフトが必要<br>
+      Webシステム：インターネットとWebブラウザを使用。専用ソフトがいらない<br>
+      シンクライアント：クライアントは最小限の機能のみ。クライアント側にデータが残らない（保存されない）</br>
+    </div>
+    <div class="item">
+      <dt>サーバの仮想化</dt>
+      <dd class="hidden">1台のコンピュータ上で仮想的に複数のサーバを動作させる技術</dd>
+    </div>
+    <div class="item">
+      <dt>デュプレックスシステム</dt>
+      <dd class="hidden">メインで動作するコンピュータと、故障に備えて待機しているコンピュータの2つのコンピュータからなるシステム構成</dd>
+    </div>
+    <div class="item">
+      <dt>デュアルシステム</dt>
+      <dd class="hidden">2つのコンピュータが同じ処理を行い、結果を照合して正しいことを確認するシステム構成</dd>
+    </div>
+    <div class="item">
+      <dt>ストライピング（RAID 0）</dt>
+      <dd class="hidden">複数のハードディスクにデータを分散させて書き込む記憶方式である</dd>
+    </div>
+    <div class="item">
+      <dt>ミラーリング（RAID 1）</dt>
+      <dd class="hidden">複数のハードディスクに同じデータを書き込む記憶方式である</dd>
+    </div>
+    <div class="item">
+      <dt>NAS<br>
+      （Network Attached Storage）</dt>
+      <dd class="hidden">LANに直接接続して使用するファイルサーバ専用機。複数のPCで共有できる</dd>
+    </div>
+    <div class="item">
+      <dt>応答時間<br>
+        （レスポンスタイム）</dt>
+      <dd class="hidden">処理にかかる時間</dd>
+    </div>
+    <div class="item">
+      <dt>ベンチマークテスト</dt>
+      <dd class="hidden">システムの性能を比較するために行うテスト</dd>
+    </div>
+    <div class="item">
+      <dt>TCO<br>
+      （Total Cost of Ownership)</dt>
+      <dd class="hidden">初期コストと、運用コストの総額</dd>
+    </div>
+    <div class="item">
+      <dt>MTBF<br>
+      （Mean Time Between Failures）</dt>
+      <dd class="hidden">平均故障間隔。システムが故障せずに正しく動いていた時間の平均値。システムの信頼性を表す指標の1つ<br>
+      ・MTBF ＝ 稼働時間の合計 ÷ 故障の回数</dd>
+    </div>
+    <div class="item">
+      <dt>MTTR<br>
+      （Mean Time To Repair)</dt>
+      <dd class="hidden">平均修理時間。システムが稼働していなかった時間の平均値。システムの保守性を表す指標の1つ
+     ・MTTR ＝ 故障時間の合計 ÷ 故障の回数</dd>
+    </div>
+    <div class="item">
+      <dt>稼働率</dt>
+      <dd class="hidden">システムが故障せずに動いていた時間の割合。可用性を表す指標の1つ<br>
+     ・稼働率 ＝ MTBF ÷ (MTBF ＋ MTTR)</dd>
+    </div>
+    <div class="item">
+      <dt>フォールトトレラント</dt>
+      <dd class="hidden">コンピュータが故障した場合でも、システムを停止させないための設計</dd>
+    </div>
+    <div class="item">
+      <dt>直列システム</dt>
+      <dd class="hidden">複数の装置が直列に接続（exシンプレックスシステム）<br>
+        直列システムの稼働率 ＝ 装置Aの稼働率 × 装置Bの稼働率</dd>
+    </div>
+    <div class="item">
+      <dt>並列システム</dt>
+      <dd class="hidden">複数の装置が並列（exデュアルシステム、デュプレックスシステム）<br>
+        並列システムの稼働率 ＝ 1 − (1 − 装置Aの稼働率) × (1 − 装置Bの稼働率)</dd>
+    </div>
+    <div class="item">
+      <dt>複合システム</dt>
+      <dd class="hidden">複合システムの稼働率 ＝ システムの一部分の稼働率を計算し、最後にシステム全体の稼働率を計算する</dd>
+    </div>
+    <div class="item">
+      <dt>バスタブ曲線</dt>
+      <dd class="hidden">装置の故障率と時間経過の関係を表した曲線のこと</dd>
+    </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    
+    // 1. 全体ボタンの設定
+    let isShowAll = false;
+    const btn = document.getElementById('toggleBtn');
+    
+    if (btn) {
+      // スマホのタッチとPCのクリックの両方に対応
+      const handleToggleAll = function(e) {
+        e.preventDefault(); // タップのズレやダブル発火を防止
+        const allDd = document.querySelectorAll('dd');
+        isShowAll = !isShowAll;
+
+        allDd.forEach(dd => {
+          if (isShowAll) {
+            dd.classList.remove('hidden');
+          } else {
+            dd.classList.add('hidden');
+          }
+        });
+
+        btn.textContent = isShowAll ? "すべての説明を隠す" : "すべての説明を表示";
+      };
+
+      btn.addEventListener('touchend', handleToggleAll, { passive: false });
+      btn.addEventListener('click', handleToggleAll);
+    }
+
+    // 2. 個別の用語（dt）の設定
+    const dts = document.querySelectorAll('dt');
+    dts.forEach(dt => {
+      const handleToggleDt = function(e) {
+        // 直後のddを取得してクラスを切り替え
+        const targetDd = this.nextElementSibling;
+        if (targetDd && targetDd.tagName === 'DD') {
+          targetDd.classList.toggle('hidden');
+        }
+      };
+
+      // スマホでのタップ対応
+      dt.addEventListener('click', handleToggleDt);
+    });
+
+  });
+</script>
+
+</body>
+</html>

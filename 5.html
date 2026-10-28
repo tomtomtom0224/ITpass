@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ja">
+<link rel="stylesheet" href="style.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT要点暗記ノート</title>
+  <style>
+    body {
+      font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", MeiRyo, sans-serif;
+      line-height: 1.6;
+      background-color: #f4f7f6;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+    }
+    
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      border-bottom: 2px solid #8a9aa5;
+      padding-bottom: 10px;
+    }
+    h2 {
+      background-color: #8a9aa5;
+      color: white;
+      padding: 8px 15px;
+      border-radius: 4px;
+      margin-top: 30px;
+      font-size: 1.2rem;
+    }
+    dl {
+      margin: 0;
+      padding: 0;
+    }
+    
+    dt {
+      font-weight: bold;
+      color: #e74c3c;
+      width: 30%;
+      min-width: 200px;
+      padding-right: 10px;
+    }
+    dd {
+      margin: 0;
+      width: 65%;
+      flex-grow: 1;
+    }
+    @media (max-width: 600px) {
+      dt, dd {
+        width: 100%;
+      }
+      dt {
+        color: #d35400;
+        margin-bottom: 4px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+  <h1>ITパス暗記ノート</h1>
+<!-- ノートの上部にボタンを配置 -->
+<div style="margin-bottom: 20px;">
+<button id="toggleBtn">すべての説明を表示</button>
+</div>
+
+<!-- 例：用語リスト構造 -->
+
+<h2>5章</h2>
+    <div class="item">
+      <dt>情報システム戦略を立案する際</dt>
+      <dd class="hidden">「あるべき姿」を明確にしたうえで、全体最適を考え、経営戦略に基づいて計画を立てる必要がある</dd>
+    </div>
+    <div class="item">
+      <dt>EA<br>
+      (Enterprise Architecture)</dt>
+      <dd class="hidden">企業や政府など、大きな組織の情報システムを最適化するための手法</dd>
+    </div>
+    <div class="item">
+      <dt>エンタープライズサーチ</dt>
+      <dd class="hidden">企業内のさまざまなシステムに蓄積されているデータを、一元的に検索するための仕組み</dd>
+    </div>
+  </dl>
+    <div class="item">
+      <dt>SoE<br>
+      (Systems of Engagement)</dt>
+      <dd class="hidden">ユーザーとのつながりを強化するシステム <=>SoR(Systems of Record)</dd>
+    </div>    
+    <div class="item">
+      <dt>DFD<br>
+      (Data Flow Diagram) </dt>
+      <dd class="hidden">データフロー図とは、業務プロセスの「データの流れ」を表す図である</dd>
+    </div>    
+    <div class="item">
+      <dt>モデリング</dt>
+      <dd class="hidden">現実世界にある複雑なものを単純化してわかりやすくすること</dd>
+    </div>
+    <div class="item">
+      <dt>BPR<br>
+      （Business Process Reengineering）</dt>
+      <dd class="hidden">業務プロセスを抜本的に再設計する手法である</dd>
+    </div>
+    <div class="item">
+      <dt>BPM<br>
+      （Business Process Management）</dt>
+      <dd class="hidden">業務プロセスを継続的に改善する手法である</dd>
+    </div>
+    <div class="item">
+      <dt>ワークフローシステム</dt>
+      <dd class="hidden">決裁申請手続を効率化するシステムである</dd>
+    </div>
+    <div class="item">
+      <dt>グループウェア</dt>
+      <dd class="hidden">共同作業を複数人で円滑に行うためのソフトウェアである</dd>
+    </div>
+    <div class="item">
+      <dt>RPA<br>
+      (Robotic Process Automation)</dt>
+      <dd class="hidden">定型的な事務作業を自動化する（ソフトウェアロボット）</dd>
+    </div>
+    <div class="item">
+      <dt>テレワーク</dt>
+      <dd class="hidden">勤務時間や就業場所に制限されない働き方</dd>
+    </div>
+    <div class="item">
+      <dt>シェアリングエコノミー</dt>
+      <dd class="hidden">個人や企業が持つ遊休資産をインターネットを使って他の個人や企業と共有する仕組み</dd>
+    </div>
+    <div class="item">
+      <dt>オンプレミス</dt>
+      <dd class="hidden">自社の敷地内に自社のサーバを置くことである</dd>
+    </div>
+    <div class="item">
+      <dt>ハウジングサービス</dt>
+      <dd class="hidden">他社の敷地内に自社のサーバを置くサービスである</dd>
+    </div>
+    <div class="item">
+      <dt>ホスティングサービス</dt>
+      <dd class="hidden">他社の敷地内にある、他社が所有しているサーバを利用するサービスである（サーバの所在地が明確）</dd>
+    </div>
+    <div class="item">
+      <dt>クラウドコンピューティング</dt>
+      <dd class="hidden">他社の敷地内にある、他社が所有しているサーバを利用するサービスである（サーバの所在地が不明確）</dd>
+    </div>
+    <div class="item">
+      <dt>IaaS<br>
+      （Infrastructure as a Service）</dt>
+      <dd class="hidden">クラウド上で サーバー・ストレージ・ネットワークなどの基盤を提供するサービス形態で、企業が物理機器を持たずに IT インフラを利用できる仕組み。</dd>
+    </div>
+    <div class="item">
+      <dt>PaaS<br>
+      （Platform as a Service）</dt>
+      <dd class="hidden">プラットフォームを提供するサービスである(Google App Engine.OSなど)</dd>
+    </div>
+    <div class="item">
+      <dt>SaaS<br>
+      （Software as a Service）</dt>
+      <dd class="hidden">ソフトウェアを提供するサービスである(Gmail,Zoom)</dd>
+    </div>
+    <div class="item">
+      <dt>Daas<br>
+      (Desktop as a Service)</dt>
+      <dd class="hidden">クラウド上に仮想デスクトップを構築し、PC・タブレットなどからネット経由で利用する仕組み。</dd>
+    </div>
+    <div class="item">
+      <dt>BI<br>
+      (Business Intelligence)</dt>
+      <dd class="hidden">企業内のデータを収集・分析・可視化し、より良い意思決定を支援する仕組みや手法の総称</dd>
+    </div>
+    <div class="item">
+      <dt>データウェアハウス</dt>
+      <dd class="hidden">意思決定に役立てるためのデータの集まり</dd>
+    </div>
+    <div class="item">
+      <dt>ビッグデータ</dt>
+      <dd class="hidden">従来のデータベース管理システムでは取り扱いが困難なほど大きく複雑なデータの集まり<br>
+      ビッグデータとデータウェアハウスの違いは、ビッグデータのほうが「データ量が多い」「データの更新頻度が高い」「データの種類が豊富」</dd>
+    </div>
+    <div class="item">
+      <dt>データマイニング</dt>
+      <dd class="hidden">データを分析して有用な情報を抽出すること</dd>
+    </div>
+    <div class="item">
+      <dt>ゲーミフィケーション</dt>
+      <dd class="hidden">ゲーム要素を用いて、自社サービスを使ってもらえるように顧客を動機付けすること</dd>
+    </div>
+    <div class="item">
+      <dt>情報リテラシー</dt>
+      <dd class="hidden">情報を活用する能力</dd>
+    </div>
+    <div class="item">
+      <dt>デジタルディバイド</dt>
+      <dd class="hidden">情報リテラシーの違いによって生じる、経済的・社会的な格差</dd>
+    </div>
+    <div class="item">
+      <dt>デジタルトランスフォーメーション(DX)</dt>
+      <dd class="hidden">デジタル技術を使った変革</dd>
+    </div>
+    <div class="item">
+      <dt>ソフトウェアライフサイクルプロセス（SLCP）</dt>
+      <dd class="hidden">ソフトウェアの企画、要件定義、開発、運用、保守までの一連の活動であり、それらの活動内容を定義した国際規格</dd>
+    </div>
+    <div class="item">
+      <dt>共通フレーム</dt>
+      <dd class="hidden">ソフトウェア開発とその取引を適正化するために、それらのベースとなる作業項目を1つひとつ定義した本である</dd>
+    </div>
+    <div class="item">
+      <dt>企画プロセス</dt>
+      <dd class="hidden">目的は、システムを実現するための実施計画を得ること<br>
+      システム化構想の立案とシステム化計画の立案に分類される</dd>
+    </div>
+    <div class="item">
+      <dt>システム化構想の立案プロセス</dt>
+      <dd class="hidden">経営上のニーズや課題を確認する</dd>
+    </div>
+    <div class="item">
+      <dt>システム化計画の立案プロセス</dt>
+      <dd class="hidden">費用とシステム投資効果を予測する</dd>
+    </div>
+    <div class="item">
+      <dt>ROI(投資利益率)<br>
+      (Return On Investment)</dt>
+      <dd class="hidden">ROI ＝ 利益 ÷ 投資額</dd>
+    </div>
+    <div class="item">
+      <dt>要件定義プロセス</dt>
+      <dd class="hidden">業務要件を決めるプロセス。要件定義プロセスの主な目的は「ユーザーのニーズを知ること」</dd>
+    </div>
+    <div class="item">
+      <dt>RFI(情報提供依頼書)<br>
+      (Request For Information)</dt>
+      <dd class="hidden">ベンダーに対して実績や技術、経験、最新の技術動向などの情報を送るよう依頼する文書<br>
+      ベンダーの一次審査と情報集めが目的</dd>
+    </div>
+    <div class="item">
+      <dt>RFP(提案依頼書)<br>
+      (Request For Proposal)</dt>
+      <dd class="hidden">ベンダーに対して具体的なシステムの提案を依頼する文書</dd>
+    </div>
+    <div class="item">
+      <dt>NDA<br>
+      (Non-Disclosure Agreement)</dt>
+      <dd class="hidden">機密保持契約</dd>
+    </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    
+    // 1. 全体ボタンの設定
+    let isShowAll = false;
+    const btn = document.getElementById('toggleBtn');
+    
+    if (btn) {
+      // スマホのタッチとPCのクリックの両方に対応
+      const handleToggleAll = function(e) {
+        e.preventDefault(); // タップのズレやダブル発火を防止
+        const allDd = document.querySelectorAll('dd');
+        isShowAll = !isShowAll;
+
+        allDd.forEach(dd => {
+          if (isShowAll) {
+            dd.classList.remove('hidden');
+          } else {
+            dd.classList.add('hidden');
+          }
+        });
+
+        btn.textContent = isShowAll ? "すべての説明を隠す" : "すべての説明を表示";
+      };
+
+      btn.addEventListener('touchend', handleToggleAll, { passive: false });
+      btn.addEventListener('click', handleToggleAll);
+    }
+
+    // 2. 個別の用語（dt）の設定
+    const dts = document.querySelectorAll('dt');
+    dts.forEach(dt => {
+      const handleToggleDt = function(e) {
+        // 直後のddを取得してクラスを切り替え
+        const targetDd = this.nextElementSibling;
+        if (targetDd && targetDd.tagName === 'DD') {
+          targetDd.classList.toggle('hidden');
+        }
+      };
+
+      // スマホでのタップ対応
+      dt.addEventListener('click', handleToggleDt);
+    });
+
+  });
+</script>
+
+</body>
+</html>

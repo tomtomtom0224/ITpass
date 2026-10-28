@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ja">
+<link rel="stylesheet" href="style.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT要点暗記ノート</title>
+  <style>
+    body {
+      font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", MeiRyo, sans-serif;
+      line-height: 1.6;
+      background-color: #f4f7f6;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+    }
+    
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      border-bottom: 2px solid #8a9aa5;
+      padding-bottom: 10px;
+    }
+    h2 {
+      background-color: #8a9aa5;
+      color: white;
+      padding: 8px 15px;
+      border-radius: 4px;
+      margin-top: 30px;
+      font-size: 1.2rem;
+    }
+    dl {
+      margin: 0;
+      padding: 0;
+    }
+    
+    dt {
+      font-weight: bold;
+      color: #e74c3c;
+      width: 30%;
+      min-width: 200px;
+      padding-right: 10px;
+    }
+    dd {
+      margin: 0;
+      width: 65%;
+      flex-grow: 1;
+    }
+    @media (max-width: 600px) {
+      dt, dd {
+        width: 100%;
+      }
+      dt {
+        color: #d35400;
+        margin-bottom: 4px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+  <h1>ITパス暗記ノート</h1>
+<!-- ノートの上部にボタンを配置 -->
+<div style="margin-bottom: 20px;">
+<button id="toggleBtn">すべての説明を表示</button>
+</div>
+
+<!-- 例：用語リスト構造 -->
+
+  <h2>1章</h2>
+<dl>
+    <div class="item">
+      <dt>経営理念</dt>
+      <dd class="hidden">
+          企業の存在意義
+      </dd>
+    </div>
+    <div class="item">
+      <dt>ビジョン</dt>
+      <dd class="hidden">
+          企業が目指す将来の姿
+      </dd>
+    </div>
+    <div class="item">
+      <dt>経営戦略</dt>
+      <dd class="hidden">ビジョンを実現するための具体的な行動計画</dd>
+    </div>
+    <div class="item">
+      <dt>CSR<br>
+      (Corporate Social Responsibility)</dt>
+      <dd class="hidden">企業の社会的責任</dd>
+    </div>
+    <div class="item">
+      <dt>グリーンIT</dt>
+      <dd class="hidden">ITを使った環境保護</dd>
+    </div>
+    <div class="item">
+      <dt>ソーシャルビジネス</dt>
+      <dd class="hidden">子育てや介護、環境問題などの社会的課題を、ビジネスの手法を活用して解決していく企業活動</dd>
+    </div>
+    <div class="item">
+      <dt>SDGs</dt>
+      <dd class="hidden">持続可能な世界を実現するための17の国際目標</dd>
+    </div>
+    <div class="item">
+      <dt>OJT<br>
+      （On-the-Job Training）</dt>
+      <dd class="hidden">業務の実践を通じた教育訓練</dd>
+    </div>
+    <div class="item">
+      <dt>Off-JT<br>
+      （Off-the-Job Training）</dt>
+      <dd class="hidden">仕事を離れて行われる教育訓練（研修等）</dd>
+    </div>
+    <div class="item">
+      <dt>HRM<br>
+      (Human Resource Management)</dt>
+      <dd class="hidden">人的資源管理</dd>
+    </div>
+    <div class="item">
+      <dt>HRテック</dt>
+      <dd class="hidden">HRMのうち、AIやIoTといったITを活用する手法</dd>
+    </div>
+    <div class="item">
+      <dt>職能別組織<br>
+      （機能別組織）</dt>
+      <dd class="hidden">業務を専門的な機能に分けて構成する組織</dd>
+    </div>
+    <div class="item">
+      <dt>事業部制組織</dt>
+      <dd class="hidden">事業部を単位として構成する組織。一個の会社に事業部ごとに総務、営業などが複数ある。</dd>
+    </div>
+    <div class="item">
+      <dt>マトリックス組織</dt>
+      <dd class="hidden">一人の人が事業部ごとにある複数の部署に所属する組織</dd>
+    </div>
+    <div class="item">
+      <dt>プロジェクト組織</dt>
+      <dd class="hidden">プロジェクトごとに作る一時的な組織</dd>
+    </div>
+    <div class="item">
+      <dt>カンパニー制組織</dt>
+      <dd class="hidden">各事業部を独立した会社とみなして構成する組織</dd>
+    </div>
+    <div class="item">
+      <dt>CEO<br>
+      （Chief Executive Officer）</dt>
+      <dd class="hidden">経営の最高責任者</dd>
+    </div>
+    <div class="item">
+      <dt>CIO<br>
+      （Chief Information Officer）</dt>
+      <dd class="hidden">情報システムを統括する最高責任者</dd>
+    </div>
+    <div class="item">
+      <dt>CTO<br>
+      （Chief Technology Officer）</dt>
+      <dd class="hidden">技術経営の最高責任者</dd>
+    </div>
+    <div class="item">
+      <dt>パレート図</dt>
+      <dd class="hidden">棒グラフと折れ線グラフを組み合わせたグラフ。重要なデータが横軸の左端に記載されるため、重要な項目を一目で確認できる</dd>
+    </div>
+    <div class="item">
+      <dt>ABC分析</dt>
+      <dd class="hidden">データをパレート図で表し、重要度で3つのグループにランク分けする</dd>
+    </div>
+    <div class="item">
+      <dt>レーダーチャート</dt>
+      <dd class="hidden">放射状の図</dd>
+    </div>
+    <div class="item">
+      <dt>散布図</dt>
+      <dd class="hidden">相関関係は「正の相関」「負の相関」「相関なし」の3つ</dd>
+    </div>
+    <div class="item">
+      <dt>回帰分析</dt>
+      <dd class="hidden">過去を分析して、将来を予測する</dd>
+    </div>
+    <div class="item">
+      <dt>ブレーンストーミング</dt>
+      <dd class="hidden">複数人でアイディアを出し合う</dd>
+    </div>
+    <div class="item">
+      <dt>損益分岐点</dt>
+      <dd class="hidden">売上高と総費用が等しくなり、利益も損失もゼロ（赤黒トントン）になる売上高または販売数量</dd>
+    </div>
+    <div class="item">
+      <dt>貸借対照表</dt>
+      <dd class="hidden">企業の全財産が記載された表<br>
+      資本金は貸借対照表の純資産の部に分類される
+      <figure class="media-figure">
+        <img src="balance sheet.png" class="side-image">
+      </figure>
+      </dd>
+    </div>
+    <div class="item">
+      <dt>自己資本比率</dt>
+      <dd class="hidden">自己資本÷総資本×100</dd>
+    </div>
+    <div class="item">
+      <dt>総資本回転率</dt>
+      <dd class="hidden">売上高÷総資本</dd>
+    </div>
+    <div class="item">
+      <dt>売上総利益</dt>
+      <dd class="hidden">売上総利益 ＝ 売上高 − 売上原価</dd>
+    </div>
+    <div class="item">
+      <dt>営業利益</dt>
+      <dd class="hidden">営業利益 ＝ 売上総利益 − 販売管理費</dd>
+    </div>
+    <div class="item">
+      <dt>経常利益</dt>
+      <dd class="hidden">経常利益 ＝ 営業利益 ＋ 営業外収益 − 営業外費用
+        <figure class="media-figure">
+          <img src="損益計算書2.png" class="side-image">
+        </figure></dd>
+    </div>
+
+    <div class="item">
+      <dt>当期純利益</dt>
+      <dd class="hidden">当期純利益 ＝ 最終的な利益
+        <figure class="media-figure">
+          <img src="損益計算書.png" class="side-image">
+        </figure>
+      </dd>
+    </div>
+    <div class="item">
+      <dt>キャッシュフロー計算書</dt>
+      <dd class="hidden">現金の出入りを「営業活動」「投資活動」「財務活動」の3つに分類して計算する</dd>
+    </div>
+    <div class="item">
+      <dt>ROE<br>
+      (Return On Equity）</dt>
+      <dd class="hidden">自己資本利益率＝当期純利益/自己資本×100<br>
+        自己資本に対して、どれだけの利益を出したかを表す指標<br>
+        大きいほど得 
+      </dd>
+    </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    
+    // 1. 全体ボタンの設定
+    let isShowAll = false;
+    const btn = document.getElementById('toggleBtn');
+    
+    if (btn) {
+      // スマホのタッチとPCのクリックの両方に対応
+      const handleToggleAll = function(e) {
+        e.preventDefault(); // タップのズレやダブル発火を防止
+        const allDd = document.querySelectorAll('dd');
+        isShowAll = !isShowAll;
+
+        allDd.forEach(dd => {
+          if (isShowAll) {
+            dd.classList.remove('hidden');
+          } else {
+            dd.classList.add('hidden');
+          }
+        });
+
+        btn.textContent = isShowAll ? "すべての説明を隠す" : "すべての説明を表示";
+      };
+
+      btn.addEventListener('touchend', handleToggleAll, { passive: false });
+      btn.addEventListener('click', handleToggleAll);
+    }
+
+    // 2. 個別の用語（dt）の設定
+    const dts = document.querySelectorAll('dt');
+    dts.forEach(dt => {
+      const handleToggleDt = function(e) {
+        // 直後のddを取得してクラスを切り替え
+        const targetDd = this.nextElementSibling;
+        if (targetDd && targetDd.tagName === 'DD') {
+          targetDd.classList.toggle('hidden');
+        }
+      };
+
+      // スマホでのタップ対応
+      dt.addEventListener('click', handleToggleDt);
+    });
+
+  });
+</script>
+
+</body>
+</html>

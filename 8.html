@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ja">
+<link rel="stylesheet" href="style.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT要点暗記ノート</title>
+  <style>
+    body {
+      font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", MeiRyo, sans-serif;
+      line-height: 1.6;
+      background-color: #f4f7f6;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+    }
+    
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      border-bottom: 2px solid #8a9aa5;
+      padding-bottom: 10px;
+    }
+    h2 {
+      background-color: #8a9aa5;
+      color: white;
+      padding: 8px 15px;
+      border-radius: 4px;
+      margin-top: 30px;
+      font-size: 1.2rem;
+    }
+    dl {
+      margin: 0;
+      padding: 0;
+    }
+    
+    dt {
+      font-weight: bold;
+      color: #e74c3c;
+      width: 30%;
+      min-width: 200px;
+      padding-right: 10px;
+    }
+    dd {
+      margin: 0;
+      width: 65%;
+      flex-grow: 1;
+    }
+    @media (max-width: 600px) {
+      dt, dd {
+        width: 100%;
+      }
+      dt {
+        color: #d35400;
+        margin-bottom: 4px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+  <h1>ITパス暗記ノート</h1>
+<!-- ノートの上部にボタンを配置 -->
+<div style="margin-bottom: 20px;">
+<button id="toggleBtn">すべての説明を表示</button>
+</div>
+
+<!-- 例：用語リスト構造 -->
+
+<h2>8章</h2>
+    <div class="item">
+      <dt>ITIL</dt>
+      <dd class="hidden">ITサービスマネジメントのベストプラクティス集</dd>
+    </div>
+    <div class="item">
+      <dt>PDCAサイクル</dt>
+      <dd class="hidden">・「計画」に近い用語が入っている選択肢は、Plan<br>
+          ・「実行」に近い用語が入っている選択肢は、Do<br>
+          ・「評価」に近い用語が入っている選択肢は、Check<br>
+          ・「改善」に近い用語が入っている選択肢は、Act</dd>
+    </div>
+    <div class="item">
+      <dt>SLM<br>
+      (Service Level Management)</dt>
+      <dd class="hidden">サービスレベル管理とは、サービスの提供者と利用者が合意した「サービスレベル」を維持・改善するための活動。<br>
+      SLMでは主にPDCAの手法を使ってサービスレベルを維持・改善する</dd>
+    </div>
+    <div class="item">
+      <dt>SLA<br>
+      (Service Level Agreement)</dt>
+      <dd class="hidden">サービスレベルの合意書。SLAの目的は、サービスの範囲と品質を明確にすることである</dd>
+    </div>
+    <div class="item">
+      <dt>可用性</dt>
+      <dd class="hidden">サービスを利用したいときに利用できること</dd>
+    </div>
+    <div class="item">
+      <dt>可用性管理</dt>
+      <dd class="hidden">可用性を確保するための活動</dd>
+    </div>
+    <div class="item">
+      <dt>サービスサポート</dt>
+      <dd class="hidden">日々のITサービスの運用。サービスサポートにおける「インシデント」と「問題」の違いが出題される。インシデントは「状況」、問題は「根本原因」
+      </figure>   
+        <figure class="media-figure">
+        <img src="サービスサポート.png" class="side-image">
+      </figure>         
+      </dd>
+    </div>
+    <div class="item">
+      <dt>変更管理</dt>
+      <dd class="hidden">システムの変更を承認し、実施計画を立てる活動</dd>
+    </div>
+    <div class="item">
+      <dt>リリース及び展開管理</dt>
+      <dd class="hidden">承認された変更を本番環境に実装すること</dd>
+    </div>
+    <div class="item">
+      <dt>サービスデスク</dt>
+      <dd class="hidden">単一窓口のヘルプデスク。目的は、サービスレベルを低下させないこと。そのため、問題管理（根本原因の究明）よりも、インシデント管理（迅速な復旧）が優先される</dd>
+    </div>
+    <div class="item">
+      <dt>エスカレーション</dt>
+      <dd class="hidden">ヘルプデスクで対応しきれない問い合わせを専門部署に引き継ぐこと</dd>
+    </div>
+    <div class="item">
+      <dt>チャットボット</dt>
+      <dd class="hidden">質問に自動的に応答する仕組み</dd>
+    </div>
+    <div class="item">
+      <dt>BCM<br>
+      （Business Continuity Management）</dt>
+      <dd class="hidden">災害が起きても事業を継続させるための経営手法</dd>
+    </div>
+    <div class="item">
+      <dt>BCP<br>
+      (Business Continuity Plan)</dt>
+      <dd class="hidden">事業をいかに継続するかをまとめた計画</dd>
+    </div>
+    <div class="item">
+      <dt>ファシリティマネジメント</dt>
+      <dd class="hidden">建物や設備の保有や運用、維持などを最適化する手法である</dd>
+    </div>
+    <div class="item">
+      <dt>UPS<br>
+        （無停電電源装置）</dt>
+      <dd class="hidden">一時的（数分）に電力を供給するための装置</dd>
+    </div>
+    <div class="item">
+      <dt>自家発電装置</dt>
+      <dd class="hidden">長時間、システムに電力を供給するための装置</dd>
+    </div>
+    <div class="item">
+      <dt>フリーアクセスフロア</dt>
+      <dd class="hidden">取り外し可能な床パネルを敷き詰めた構造</dd>
+    </div>
+    <div class="item">
+      <dt>システム監査</dt>
+      <dd class="hidden">目的は、リスクに適切に対応しているかを評価すること。改善命令に基づいて改善活動を行うのは被監査部門。監査人は、改善活動は行わない
+監査人は独立した第三者であること（身内は不可）</dd>
+    </div>
+    <div class="item">
+      <dt>コーポレートガバナンス</dt>
+      <dd class="hidden">ステークホルダーが経営を監視すること。社外取締役を登用すると、コーポレートガバナンスが強化される</dd>
+    </div>
+    <div class="item">
+      <dt>内部統制</dt>
+      <dd class="hidden">社内のすべての人が業務を健全化すること。責任者は経営者</dd>
+    </div>
+    <div class="item">
+      <dt>ITガバナンス</dt>
+      <dd class="hidden">ITを活用して、企業のあるべき姿に導く仕組みを企業に組み込むこと</dd>
+    </div>
+    <div class="item">
+      <dt>職務分掌</dt>
+      <dd class="hidden">担当者の役割や仕事の権限を明確にすること</dd>
+    </div>
+
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    
+    // 1. 全体ボタンの設定
+    let isShowAll = false;
+    const btn = document.getElementById('toggleBtn');
+    
+    if (btn) {
+      // スマホのタッチとPCのクリックの両方に対応
+      const handleToggleAll = function(e) {
+        e.preventDefault(); // タップのズレやダブル発火を防止
+        const allDd = document.querySelectorAll('dd');
+        isShowAll = !isShowAll;
+
+        allDd.forEach(dd => {
+          if (isShowAll) {
+            dd.classList.remove('hidden');
+          } else {
+            dd.classList.add('hidden');
+          }
+        });
+
+        btn.textContent = isShowAll ? "すべての説明を隠す" : "すべての説明を表示";
+      };
+
+      btn.addEventListener('touchend', handleToggleAll, { passive: false });
+      btn.addEventListener('click', handleToggleAll);
+    }
+
+    // 2. 個別の用語（dt）の設定
+    const dts = document.querySelectorAll('dt');
+    dts.forEach(dt => {
+      const handleToggleDt = function(e) {
+        // 直後のddを取得してクラスを切り替え
+        const targetDd = this.nextElementSibling;
+        if (targetDd && targetDd.tagName === 'DD') {
+          targetDd.classList.toggle('hidden');
+        }
+      };
+
+      // スマホでのタップ対応
+      dt.addEventListener('click', handleToggleDt);
+    });
+
+  });
+</script>
+
+</body>
+</html>

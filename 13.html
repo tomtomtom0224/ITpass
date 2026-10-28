@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ja">
+<link rel="stylesheet" href="style.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT要点暗記ノート</title>
+  <style>
+    body {
+      font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", MeiRyo, sans-serif;
+      line-height: 1.6;
+      background-color: #f4f7f6;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+    }
+    
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      border-bottom: 2px solid #8a9aa5;
+      padding-bottom: 10px;
+    }
+    h2 {
+      background-color: #8a9aa5;
+      color: white;
+      padding: 8px 15px;
+      border-radius: 4px;
+      margin-top: 30px;
+      font-size: 1.2rem;
+    }
+    dl {
+      margin: 0;
+      padding: 0;
+    }
+    
+    dt {
+      font-weight: bold;
+      color: #e74c3c;
+      width: 30%;
+      min-width: 200px;
+      padding-right: 10px;
+    }
+    dd {
+      margin: 0;
+      width: 65%;
+      flex-grow: 1;
+    }
+    @media (max-width: 600px) {
+      dt, dd {
+        width: 100%;
+      }
+      dt {
+        color: #d35400;
+        margin-bottom: 4px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+  <h1>ITパス暗記ノート</h1>
+<!-- ノートの上部にボタンを配置 -->
+<div style="margin-bottom: 20px;">
+<button id="toggleBtn">すべての説明を表示</button>
+</div>
+
+<!-- 例：用語リスト構造 -->
+  <h2>13章</h2>
+    <div class="item">
+      <dt>関係データモデル</dt>
+      <dd class="hidden">データの集まりを表形式で表現する。<br>
+      ・関係データベースは、表の集まり<br>
+      ・表は、行の集まり<br>
+      ・行は、フィールドの集まり</dd>
+    </div>
+    <div class="item">
+      <dt>主キー</dt>
+      <dd class="hidden">同一の値を持つことができない（重複はダメ）<br>
+                         NULLの値を持つことができない（NULLはダメ）<br>
+                         複数の列を組み合わせて設定できる（複合主キー）</dd>
+    </div>
+    <div class="item">
+      <dt>インデックス</dt>
+      <dd class="hidden">データの検索を高速化する</dd>
+    </div>
+    <div class="item">
+      <dt>E-R図<br>
+      (Entity-Relationship Diagram)</dt>
+      <dd class="hidden">データベースを設計するときに、表同士の関連を表す図
+      <figure class="media-figure">
+        <img src="ER図.png" class="side-image">
+      </figure>  </dd>
+    </div>
+    <div class="item">
+      <dt>正規化</dt>
+      <dd class="hidden">データが重複したり、データ更新の際に矛盾が生じたりしないようにすること</dd>
+    </div>
+    <div class="item">
+      <dt>DBMS<br>
+      (DataBase Manegement System)</dt>
+      <dd class="hidden">アプリケーションの要求に応じてDBを操作するシステム<br>
+      データ操作、トランザクション管理、排他制御</dd>
+    </div>
+    <div class="item">
+      <dt>SQL</dt>
+      <dd class="hidden">関係データベースを操作するための言語<br>
+      ・選択とは、表からある特定の行のみを取り出す操作<br>
+      ・射影とは、表からある特定の列のみを取り出す操作<br>
+      ・結合とは、複数の表を1つにする操作</dd>
+    </div>
+    <div class="item">
+      <dt>トランザクション管理</dt>
+      <dd class="hidden">ユーザーがDBMSに対して行う一連の命令を管理する機能</dd>
+    </div>
+    <div class="item">
+      <dt>コミット</dt>
+      <dd class="hidden">トランザクションが正常に完了した際に、データベースの更新内容を確定すること</dd>
+    </div>
+    <div class="item">
+      <dt>ログファイル</dt>
+      <dd class="hidden">データベースの更新履歴を記録したファイル</dd>
+    </div>
+    <div class="item">
+      <dt>排他制御</dt>
+      <dd class="hidden">複数人が同じデータを同時に更新しようとした場合に、ロックを使ってデータに矛盾が生じないようにする機能（データの一貫性を保つ機能）</dd>
+    </div>
+
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    
+    // 1. 全体ボタンの設定
+    let isShowAll = false;
+    const btn = document.getElementById('toggleBtn');
+    
+    if (btn) {
+      // スマホのタッチとPCのクリックの両方に対応
+      const handleToggleAll = function(e) {
+        e.preventDefault(); // タップのズレやダブル発火を防止
+        const allDd = document.querySelectorAll('dd');
+        isShowAll = !isShowAll;
+
+        allDd.forEach(dd => {
+          if (isShowAll) {
+            dd.classList.remove('hidden');
+          } else {
+            dd.classList.add('hidden');
+          }
+        });
+
+        btn.textContent = isShowAll ? "すべての説明を隠す" : "すべての説明を表示";
+      };
+
+      btn.addEventListener('touchend', handleToggleAll, { passive: false });
+      btn.addEventListener('click', handleToggleAll);
+    }
+
+    // 2. 個別の用語（dt）の設定
+    const dts = document.querySelectorAll('dt');
+    dts.forEach(dt => {
+      const handleToggleDt = function(e) {
+        // 直後のddを取得してクラスを切り替え
+        const targetDd = this.nextElementSibling;
+        if (targetDd && targetDd.tagName === 'DD') {
+          targetDd.classList.toggle('hidden');
+        }
+      };
+
+      // スマホでのタップ対応
+      dt.addEventListener('click', handleToggleDt);
+    });
+
+  });
+</script>
+
+</body>
+</html>

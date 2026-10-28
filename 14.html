@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ja">
+<link rel="stylesheet" href="style.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT要点暗記ノート</title>
+  <style>
+    body {
+      font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", MeiRyo, sans-serif;
+      line-height: 1.6;
+      background-color: #f4f7f6;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+    }
+    
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      border-bottom: 2px solid #8a9aa5;
+      padding-bottom: 10px;
+    }
+    h2 {
+      background-color: #8a9aa5;
+      color: white;
+      padding: 8px 15px;
+      border-radius: 4px;
+      margin-top: 30px;
+      font-size: 1.2rem;
+    }
+    dl {
+      margin: 0;
+      padding: 0;
+    }
+    
+    dt {
+      font-weight: bold;
+      color: #e74c3c;
+      width: 30%;
+      min-width: 200px;
+      padding-right: 10px;
+    }
+    dd {
+      margin: 0;
+      width: 65%;
+      flex-grow: 1;
+    }
+    @media (max-width: 600px) {
+      dt, dd {
+        width: 100%;
+      }
+      dt {
+        color: #d35400;
+        margin-bottom: 4px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+  <h1>ITパス暗記ノート</h1>
+<!-- ノートの上部にボタンを配置 -->
+<div style="margin-bottom: 20px;">
+<button id="toggleBtn">すべての説明を表示</button>
+</div>
+
+<!-- 例：用語リスト構造 -->
+    <h2>14章</h2>
+    <div class="item">
+      <dt>LANとWAN</dt>
+      <dd class="hidden">違いは、電気通信事業者が設置した通信回線を使うか否かである（WANは使う。LANは使わない）</dd>
+    </div>
+    <div class="item">
+      <dt>ルーター</dt>
+      <dd class="hidden">LANやWANを相互接続する機器</dd>
+    </div>
+    <div class="item">
+      <dt>デフォルトゲートウェイ</dt>
+      <dd class="hidden">他のネットワークへの出入口の役割を担っている機器（ルーター）</dd>
+    </div>
+    <div class="item">
+      <dt>ESSID</dt>
+      <dd class="hidden">無線LANのネットワークを識別する文字列</dd>
+    </div>
+    <div class="item">
+      <dt>ESSIDステルス</dt>
+      <dd class="hidden">不正接続のリスクを低減できる</dd>
+    </div>
+    <div class="item">
+      <dt>伝送効率</dt>
+      <dd class="hidden">伝送効率 ＝ 伝送速度 ÷ 回線速度</dd>
+    </div>
+    <div class="item">
+      <dt>伝送時間</dt>
+      <dd class="hidden">伝送時間 ＝ データ量 ÷ 伝送速度</dd>
+    </div>
+    <div class="item">
+      <dt>通信プロトコル</dt>
+      <dd class="hidden">メーカーが異なる機器同士でも、お互いに通信できるようにするための約束事である</dd>
+    </div>
+    <div class="item">
+      <dt>SMTP<br>
+      （Simple Mail Transfer Protocol）</dt>
+      <dd class="hidden">電子メールを送信するためのプロトコル</dd>
+    </div>
+    <div class="item">
+      <dt>POP<br>
+      （Post Office Protocol)</dt>
+      <dd class="hidden">電子メールを受信するためのプロトコル</dd>
+    </div>
+    <div class="item">
+      <dt>IMAP<br>
+      （Internet Message Access Protocol）</dt>
+      <dd class="hidden">メールサーバ上で電子メールを閲覧するためのプロトコル</dd>
+    </div>
+    <div class="item">
+      <dt>IPアドレス</dt>
+      <dd class="hidden">コンピュータを識別するための番号</dd>
+    </div>
+    <div class="item">
+      <dt>ポート番号</dt>
+      <dd class="hidden">アプリケーションソフトウェアに割り当てられる情報の出入口を示す値</dd>
+    </div>
+    <div class="item">
+      <dt>MACアドレス</dt>
+      <dd class="hidden">ネットワーク機器ごとに割り当てられる固有の宛先</dd>
+    </div>
+    <div class="item">
+      <dt>ドメイン名</dt>
+      <dd class="hidden">コンピュータやネットワークなどを識別するための名前<br>
+      ドメイン名はネットワーク上のコンピュータを特定するが、URLはそのコンピュータに保存されているフォルダやファイルまで特定する</dd>
+    </div>
+    <div class="item">
+      <dt>DNS<br>
+      （Domain Name System）</dt>
+      <dd class="hidden">ドメイン名とIPアドレスを対応させる仕組みである</dd>
+    </div>
+    <div class="item">
+      <dt>IPv4</dt>
+      <dd class="hidden">32ビットで構成される</dd>
+    </div>
+    <div class="item">
+      <dt>IPv6</dt>
+      <dd class="hidden">128ビットで構成される。IPv6を使うと、IPアドレスの枯渇（不足）を回避できる。<br>
+　　　　　　　　　　　　　IPv6のアドレス総数はIPv4の2^96倍</dd>
+    </div>
+    <div class="item">
+      <dt>NAT<br>
+      （Network Address Translation）</dt>
+      <dd class="hidden">プライベートIPアドレスとグローバルIPアドレスを相互変換する技術である</dd>
+    </div>
+    <div class="item">
+      <dt>DHCP<br>
+      （Dynamic Host Configuration Protocol）</dt>
+      <dd class="hidden">IPアドレスを自動的に取得するためのプロトコルである</dd>
+    </div>
+    <div class="item">
+      <dt>Bcc<br>
+      （Blind Carbon Copy）</dt>
+      <dd class="hidden">Bccに指定したメールアドレスは、他の受信者には通知されない</dd>
+    </div>
+    <div class="item">
+      <dt>RSS<br>
+      （Really Simple Syndication）</dt>
+      <dd class="hidden">Webサイトの見出しやリンク、要約などを記述するフォーマット</dd>
+    </div>
+    <div class="item">
+      <dt>cookie</dt>
+      <dd class="hidden">アクセスしてきたブラウザに、Webサーバからの情報を一時的に保存する仕組み</dd>
+    </div>
+    <div class="item">
+      <dt>MVNO<br>
+      （Mobile Virtual Network Operator）</dt>
+      <dd class="hidden">仮想移動体通信事業者。他社の無線通信インフラを借り受け、通信サービスを行う事業者</dd>
+    </div>
+    <div class="item">
+      <dt>FTTH<br>
+      （Fiber To The Home）</dt>
+      <dd class="hidden">光ファイバを使った家庭向けの通信サービス</dd>
+    </div>
+    <div class="item">
+      <dt>テザリング</dt>
+      <dd class="hidden">スマートフォンをルーターとして利用する</dd>
+    </div>
+    <div class="item">
+      <dt>VoIP<br>
+      （Voice over Internet Protocol）</dt>
+      <dd class="hidden">インターネットを利用して音声通話を行う技術</dd>
+    </div>
+    <div class="item">
+      <dt>BLE<br>
+        （Bluetooth Low Energy）<br>
+      </dt>
+      <dd class="hidden">Bluetoothの仕様の1つで省電力</dd>
+    </div>
+    <div class="item">
+      <dt>LPWA<br>
+         (Low Power, Wide Area)<br>
+      </dt>
+      <dd class="hidden">省電力で広範囲の無線通信。LPWAはBLEよりも通信距離が長く、LTEよりも消費電力が低い
+      <figure class="media-figure">
+        <img src="通信規格.png" class="side-image">
+      </figure>
+      </dd>
+    </div>
+    <div class="item">
+      <dt>マルチホップ</dt>
+      <dd class="hidden">中継（ホップ）を繰り返して広範囲の通信を実現する技術</dd>
+    </div>
+    <div class="item">
+      <dt>エッジコンピューティング</dt>
+      <dd class="hidden">IoT機器の近くにサーバを配置することで応答速度を高める技術</dd>
+    </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    
+    // 1. 全体ボタンの設定
+    let isShowAll = false;
+    const btn = document.getElementById('toggleBtn');
+    
+    if (btn) {
+      // スマホのタッチとPCのクリックの両方に対応
+      const handleToggleAll = function(e) {
+        e.preventDefault(); // タップのズレやダブル発火を防止
+        const allDd = document.querySelectorAll('dd');
+        isShowAll = !isShowAll;
+
+        allDd.forEach(dd => {
+          if (isShowAll) {
+            dd.classList.remove('hidden');
+          } else {
+            dd.classList.add('hidden');
+          }
+        });
+
+        btn.textContent = isShowAll ? "すべての説明を隠す" : "すべての説明を表示";
+      };
+
+      btn.addEventListener('touchend', handleToggleAll, { passive: false });
+      btn.addEventListener('click', handleToggleAll);
+    }
+
+    // 2. 個別の用語（dt）の設定
+    const dts = document.querySelectorAll('dt');
+    dts.forEach(dt => {
+      const handleToggleDt = function(e) {
+        // 直後のddを取得してクラスを切り替え
+        const targetDd = this.nextElementSibling;
+        if (targetDd && targetDd.tagName === 'DD') {
+          targetDd.classList.toggle('hidden');
+        }
+      };
+
+      // スマホでのタップ対応
+      dt.addEventListener('click', handleToggleDt);
+    });
+
+  });
+</script>
+
+</body>
+</html>

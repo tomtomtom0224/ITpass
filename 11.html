@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ja">
+<link rel="stylesheet" href="style.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT要点暗記ノート</title>
+  <style>
+    body {
+      font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", MeiRyo, sans-serif;
+      line-height: 1.6;
+      background-color: #f4f7f6;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+    }
+    
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      border-bottom: 2px solid #8a9aa5;
+      padding-bottom: 10px;
+    }
+    h2 {
+      background-color: #8a9aa5;
+      color: white;
+      padding: 8px 15px;
+      border-radius: 4px;
+      margin-top: 30px;
+      font-size: 1.2rem;
+    }
+    dl {
+      margin: 0;
+      padding: 0;
+    }
+    
+    dt {
+      font-weight: bold;
+      color: #e74c3c;
+      width: 30%;
+      min-width: 200px;
+      padding-right: 10px;
+    }
+    dd {
+      margin: 0;
+      width: 65%;
+      flex-grow: 1;
+    }
+    @media (max-width: 600px) {
+      dt, dd {
+        width: 100%;
+      }
+      dt {
+        color: #d35400;
+        margin-bottom: 4px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+  <h1>ITパス暗記ノート</h1>
+<!-- ノートの上部にボタンを配置 -->
+<div style="margin-bottom: 20px;">
+<button id="toggleBtn">すべての説明を表示</button>
+</div>
+
+<!-- 例：用語リスト構造 -->
+
+    <h2>11章</h2>
+    <div class="item">
+      <dt>ブレードサーバ</dt>
+      <dd class="hidden">複数の基板をラック内に搭載することで、省スペース化を実現しているサーバ</dd>
+    </div>
+    <div class="item">
+      <dt>マルチコアプロセッサ</dt>
+      <dd class="hidden">各コアが別々の処理を行う（同じ処理を複数のコアが行い、その結果を照合することではない）</dd>
+    </div>
+    <div class="item">
+      <dt>レジスタ</dt>
+      <dd class="hidden">32ビットのCPUよりも、64ビットのCPUのほうが処理が高速</dd>
+    </div>
+      <div class="item">
+      <dt>主記憶装置</dt>
+      <dd class="hidden">メインメモリ。電源切れると消滅</dd>
+    </div>
+      <div class="item">
+      <dt>補助記憶装置</dt>
+      <dd class="hidden">HDD、SSD。電源切れても保存</dd>
+    </div>
+    <div class="item">
+      <dt>キャッシュメモリ</dt>
+      <dd class="hidden">CPUの内部に搭載されている超高速の記憶装置。キャッシュメモリはCPUと主記憶装置の処理速度の差を埋めるために使われる</dd>
+    </div>
+    <div class="item">
+      <dt>SSD<br>
+      (Solid State Drive)</dt>
+      <dd class="hidden">可動部品がないため、振動や衝撃に強い。SSDは消費電力が少ない</dd>
+    </div>
+    <div class="item">
+      <dt>ディスク容量</dt>
+      <dd class="hidden">CDが約700MB、DVDが約4.7GB、Blu-ray Discが約25GB</dd>
+    </div>
+    <div class="item">
+      <dt>RAM<br>
+      （Random Access Memory）</dt>
+      <dd class="hidden">揮発性メモリの総称</dd>
+    </div>
+    <div class="item">
+      <dt>ROM<br>
+        （Read Only Memory）</dt>
+      <dd class="hidden">不揮発性メモリの総称</dd>
+    </div>
+    <div class="item">
+      <dt>DRAM<br>
+      (Dynamic Random Access Memory)</dt>
+      <dd class="hidden">主記憶装置（メインメモリ）に使われる</dd>
+    </div>
+    <div class="item">
+      <dt>SRAM<br>
+      (Static Random Access Memory)</dt>
+      <dd class="hidden">キャッシュメモリに使われる</dd>
+    </div>
+    <div class="item">
+      <dt>フラッシュメモリ</dt>
+      <dd class="hidden">SSDやUSBメモリ、SDカードの中身はフラッシュメモリである</dd>
+    </div>
+    <div class="item">
+      <dt>光の三原色</dt>
+      <dd class="hidden">ディスプレイは赤(Red)、緑(Green)、青(Blue)の3色。略してRGB</dd>
+    </div>
+    <div class="item">
+      <dt>dpi<br>
+      （Dots Per Inch）</dt>
+      <dd class="hidden">プリンターやスキャナーの性能を表す「解像度」の単位</dd>
+    </div>
+    <div class="item">
+      <dt>3Dプリンター</dt>
+      <dd class="hidden">3次元データを用いて、立体物を造形する装置</dd>
+    </div>
+    <div class="item">
+      <dt>USB<br>
+      （Universal Serial Bus）</dt>
+      <dd class="hidden">キーボードやマウスなどの周辺機器を接続できる、現在最も普及している入出力インタフェース</dd>
+    </div>
+    <div class="item">
+      <dt>バスパワー</dt>
+      <dd class="hidden">ケーブルを通して周辺機器に電力を送る方式</dd>
+    </div>
+    <div class="item">
+      <dt>HDMI<br>
+      （High-Definition Multimedia Interface）</dt>
+      <dd class="hidden">画像や音声をやり取りする規格</dd>
+    </div>
+    <div class="item">
+      <dt>Bluetooth</dt>
+      <dd class="hidden">無線でデータをやり取りする規格</dd>
+    </div>
+    <div class="item">
+      <dt>デバイスドライバ</dt>
+      <dd class="hidden">PCから周辺機器を操作するためのソフトウェア。このソフトウェアを自動的にインストールする機能のことを「プラグアンドプレイ」という</dd>
+    </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    
+    // 1. 全体ボタンの設定
+    let isShowAll = false;
+    const btn = document.getElementById('toggleBtn');
+    
+    if (btn) {
+      // スマホのタッチとPCのクリックの両方に対応
+      const handleToggleAll = function(e) {
+        e.preventDefault(); // タップのズレやダブル発火を防止
+        const allDd = document.querySelectorAll('dd');
+        isShowAll = !isShowAll;
+
+        allDd.forEach(dd => {
+          if (isShowAll) {
+            dd.classList.remove('hidden');
+          } else {
+            dd.classList.add('hidden');
+          }
+        });
+
+        btn.textContent = isShowAll ? "すべての説明を隠す" : "すべての説明を表示";
+      };
+
+      btn.addEventListener('touchend', handleToggleAll, { passive: false });
+      btn.addEventListener('click', handleToggleAll);
+    }
+
+    // 2. 個別の用語（dt）の設定
+    const dts = document.querySelectorAll('dt');
+    dts.forEach(dt => {
+      const handleToggleDt = function(e) {
+        // 直後のddを取得してクラスを切り替え
+        const targetDd = this.nextElementSibling;
+        if (targetDd && targetDd.tagName === 'DD') {
+          targetDd.classList.toggle('hidden');
+        }
+      };
+
+      // スマホでのタップ対応
+      dt.addEventListener('click', handleToggleDt);
+    });
+
+  });
+</script>
+
+</body>
+</html>

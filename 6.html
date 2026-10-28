@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ja">
+<link rel="stylesheet" href="style.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT要点暗記ノート</title>
+  <style>
+    body {
+      font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", MeiRyo, sans-serif;
+      line-height: 1.6;
+      background-color: #f4f7f6;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+    }
+    
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      border-bottom: 2px solid #8a9aa5;
+      padding-bottom: 10px;
+    }
+    h2 {
+      background-color: #8a9aa5;
+      color: white;
+      padding: 8px 15px;
+      border-radius: 4px;
+      margin-top: 30px;
+      font-size: 1.2rem;
+    }
+    dl {
+      margin: 0;
+      padding: 0;
+    }
+    
+    dt {
+      font-weight: bold;
+      color: #e74c3c;
+      width: 30%;
+      min-width: 200px;
+      padding-right: 10px;
+    }
+    dd {
+      margin: 0;
+      width: 65%;
+      flex-grow: 1;
+    }
+    @media (max-width: 600px) {
+      dt, dd {
+        width: 100%;
+      }
+      dt {
+        color: #d35400;
+        margin-bottom: 4px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+  <h1>ITパス暗記ノート</h1>
+<!-- ノートの上部にボタンを配置 -->
+<div style="margin-bottom: 20px;">
+<button id="toggleBtn">すべての説明を表示</button>
+</div>
+
+<!-- 例：用語リスト構造 -->
+
+<h2>6章</h2>
+    <div class="item">
+      <dt>システム要件定義</dt>
+      <dd class="hidden">システムに必要な機能や性能を決める工程である</dd>
+    </div>
+    <div class="item">
+      <dt>システム要件</dt>
+      <dd class="hidden">業務要件のうち、システムで実現する役割。機能要件と非機能要件の2種類がある</dd>
+    </div>
+    <div class="item">
+      <dt>機能要件</dt>
+      <dd class="hidden">ユーザーも把握している、システムに必要な機能</dd>
+    </div>
+    <div class="item">
+      <dt>非機能要件</dt>
+      <dd class="hidden">ユーザーは把握しきれていない、システムに必要な性能</dd>
+    </div>
+    <div class="item">
+      <dt>システム方式設計</dt>
+      <dd class="hidden">システム要件を「ハードウェア」「ソフトウェア」「手作業」に振り分ける</dd>
+    </div>
+    <div class="item">
+      <dt>ソフトウェア要件定義</dt>
+      <dd class="hidden">ソフトウェアの要件（機能や性能）を決める。主にインタフェースとデータ</dd>
+    </div>
+    <div class="item">
+      <dt>ソフトウェア方式設計</dt>
+      <dd class="hidden">ソフトウェア要件（機能や性能）をプログラムの単位まで分割する</dd>
+    </div>
+    <div class="item">
+      <dt>ソフトウェア詳細設計</dt>
+      <dd class="hidden">「プログラムの単位まで分割された要件」をさらに「コーディングができる単位」まで分割する</dd>
+    </div>
+    <div class="item">
+      <dt>プログラミング</dt>
+      <dd class="hidden">ソフトウェア詳細設計の後に行う工程である</dd>
+    </div>
+    <div class="item">
+      <dt>単体テスト</dt>
+      <dd class="hidden">プログラムに誤りがないことを検証する</dd>
+    </div>
+    <div class="item">
+      <dt>結合テスト</dt>
+      <dd class="hidden">プログラム同士のインタフェースが合うかを検証する</dd>
+    </div>
+    <div class="item">
+      <dt>システムテスト</dt>
+      <dd class="hidden">システム要件（機能と性能）が仕様通りに動作するかを検証する</dd>
+    </div>
+    <div class="item">
+      <dt>運用テスト</dt>
+      <dd class="hidden">本番環境でシステムを運用し、業務要件どおりにシステムが動作することを検証する</dd>
+    </div>
+    <div class="item">
+      <dt>ホワイトボックステスト</dt>
+      <dd class="hidden">内部構造を分析して行うテスト</dd>
+    </div>
+    <div class="item">
+      <dt>ブラックボックステスト</dt>
+      <dd class="hidden">内部構造を考慮せず、システム要件定義書どおりに動作するかを確認するテスト</dd>
+    </div>
+    <div class="item">
+      <dt>ソフトウェア導入</dt>
+      <dd class="hidden">本番環境にソフトウェアをインストールすること</dd>
+    </div>
+    <div class="item">
+      <dt>ソフトウェア受入れテスト</dt>
+      <dd class="hidden">システムが正常に稼働することを利用者側が確認するテストである</dd>
+    </div>
+    <div class="item">
+      <dt>ソフトウェアライフサイクルプロセス<br>
+      (SLCP)</dt>
+      <dd class="hidden">企画 → 要件定義 → 開発 → 運用 → 保守</dd>
+    </div>
+    <div class="item">
+      <dt>ソフトウェア保守</dt>
+      <dd class="hidden">本番稼働中のソフトウェアを修正・改良すること</dd>
+    </div>
+    <div class="item">
+      <dt>ファンクションポイント法</dt>
+      <dd class="hidden">システムの機能に点数をつけて、開発費用を見積もる方法</dd>
+    </div>
+    <div class="item">
+      <dt>ウォーターフォールモデル</dt>
+      <dd class="hidden">上流工程から下流工程へ向かって一直線に順番に開発工程を進めるソフトウェア開発モデル<br>
+      計画が立てやすい、修正作業が苦手、大きいプロジェクト向き</dd>
+    </div>
+    <div class="item">
+      <dt>アジャイル開発</dt>
+      <dd class="hidden">短期間に開発とリリースを繰り返す。そのため、仕様変更に柔軟</dd>
+    </div>
+    <div class="item">
+      <dt>DevOps</dt>
+      <dd class="hidden">開発担当者と運用担当者が密接に連携してシステムを開発すること</dd>
+    </div>
+    <div class="item">
+      <dt>リファクタリング</dt>
+      <dd class="hidden">プログラムの機能仕様は変えずに、内部構造を変えること</dd>
+    </div>
+
+<table class="fim-table">
+  <thead>
+    <tr>
+      <th>木の幹<br>
+      SLCP</th>
+      <th>枝<br>
+      工程</th>
+      <th >葉<br>
+      下位工程</th>
+      <th>備考</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">企画プロセス</td>
+      <td colspan="2">システム化構想の立案プロセス
+      </td>
+      <td>経営上のニーズの確認</td>
+    </tr>
+    <tr>
+      <td colspan="2">システム化計画の立案プロセス</td>
+      <td>費用とシステム投資効果の予測（ROI）</td>
+    </tr>
+    <tr>
+      <td rowspan="2">要件定義プロセス</td>
+      <td rowspan="2">業務要件<br>
+      （業務要件、ユーザーのニーズを明確化）</td>
+      <td>組織及び環境要件</td>
+      <td>組織の構成、従業員の数、設備等</td>
+    </tr>
+    <tr>
+      <td>システム要件</td>
+      <td>開発プロセスのシステム要件のこと</td>
+    </tr>
+    <tr>
+      <td rowspan="13">開発プロセス</td>
+      <td rowspan="2">システム要件定義</td>
+      <td>機能要件</td>
+      <td>ユーザーのヒアリングで出た必要な機能</td>
+    </tr>
+    <tr>
+      <td>非機能要件</td>
+      <td>ヒアリングで出てこない機能。応答時間やセキュリティなど</td>
+    </tr>
+    <tr>
+      <td rowspan="4">システム設計</td>
+      <td>システム方式設計</td>
+      <td>システム要件を「ハードウェア」「ソフトウェア」「手作業」に振り分ける</td>
+    </tr>
+    <tr>
+      <td>ソフトウェア要件定義</td>
+      <td>ソフトウェアの要件（機能や性能）を決める。主にインタフェースとデータ</td>
+    </tr>
+    <tr>
+      <td>ソフトウェア方式設計</td>
+      <td>ソフトウェア要件（機能や性能）をプログラムの単位まで分割する</td>
+    </tr>
+    <tr>
+      <td>ソフトウェア詳細設計</td>
+      <td>「プログラムの単位まで分割された要件」をさらに「コーディングができる単位」まで分割する</td>
+    </tr>
+    <tr>
+      <td colspan="2">プログラミング</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="4">テスト</td>
+      <td>単体テスト</td>
+      <td>プログラムに誤りがないことを検証する<br>
+          ホワイトボックステスト</td>
+    </tr>
+    <tr>
+      <td>結合テスト</td>
+      <td>プログラム同士のインタフェースが合うかを検証する<br>
+          ブラックボックステスト</td>
+    </tr>
+    <tr>
+      <td>システムテスト</td>
+      <td>システム要件（機能と性能）が仕様通りに動作するかを検証する</td>
+    </tr>
+    <tr>
+      <td>運用テスト</td>
+      <td>本番環境でシステムを運用し、業務要件どおりにシステムが動作することを検証する</td>
+    </tr>
+    <tr>
+      <td rowspan="2">ソフトウェア受け入れ</td>
+      <td>ソフトウェア導入</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ソフトウェア受け入れ支援</td>
+      <td></td>
+    </tr>
+  <tr>
+    <td>運用プロセス</td>
+    <td colspan="2"></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>保守プロセス</td>
+    <td colspan="2">ソフトウェア保守</td>
+    <td></td>
+  </tr>
+  </tbody>
+</table>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    
+    // 1. 全体ボタンの設定
+    let isShowAll = false;
+    const btn = document.getElementById('toggleBtn');
+    
+    if (btn) {
+      // スマホのタッチとPCのクリックの両方に対応
+      const handleToggleAll = function(e) {
+        e.preventDefault(); // タップのズレやダブル発火を防止
+        const allDd = document.querySelectorAll('dd');
+        isShowAll = !isShowAll;
+
+        allDd.forEach(dd => {
+          if (isShowAll) {
+            dd.classList.remove('hidden');
+          } else {
+            dd.classList.add('hidden');
+          }
+        });
+
+        btn.textContent = isShowAll ? "すべての説明を隠す" : "すべての説明を表示";
+      };
+
+      btn.addEventListener('touchend', handleToggleAll, { passive: false });
+      btn.addEventListener('click', handleToggleAll);
+    }
+
+    // 2. 個別の用語（dt）の設定
+    const dts = document.querySelectorAll('dt');
+    dts.forEach(dt => {
+      const handleToggleDt = function(e) {
+        // 直後のddを取得してクラスを切り替え
+        const targetDd = this.nextElementSibling;
+        if (targetDd && targetDd.tagName === 'DD') {
+          targetDd.classList.toggle('hidden');
+        }
+      };
+
+      // スマホでのタップ対応
+      dt.addEventListener('click', handleToggleDt);
+    });
+
+  });
+</script>
+
+</body>
+</html>

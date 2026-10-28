@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ja">
+<link rel="stylesheet" href="style.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT要点暗記ノート</title>
+  <style>
+    body {
+      font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", MeiRyo, sans-serif;
+      line-height: 1.6;
+      background-color: #f4f7f6;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+    }
+    
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      border-bottom: 2px solid #8a9aa5;
+      padding-bottom: 10px;
+    }
+    h2 {
+      background-color: #8a9aa5;
+      color: white;
+      padding: 8px 15px;
+      border-radius: 4px;
+      margin-top: 30px;
+      font-size: 1.2rem;
+    }
+    dl {
+      margin: 0;
+      padding: 0;
+    }
+    
+    dt {
+      font-weight: bold;
+      color: #e74c3c;
+      width: 30%;
+      min-width: 200px;
+      padding-right: 10px;
+    }
+    dd {
+      margin: 0;
+      width: 65%;
+      flex-grow: 1;
+    }
+    @media (max-width: 600px) {
+      dt, dd {
+        width: 100%;
+      }
+      dt {
+        color: #d35400;
+        margin-bottom: 4px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+  <h1>ITパス暗記ノート</h1>
+<!-- ノートの上部にボタンを配置 -->
+<div style="margin-bottom: 20px;">
+<button id="toggleBtn">すべての説明を表示</button>
+</div>
+
+<!-- 例：用語リスト構造 -->
+
+   <h2>3章</h2>
+    <div class="item">
+      <dt>SWOT分析</dt>
+      <dd class="hidden">自社を取り巻く経営環境を把握できる<br>
+      内部環境とは、自社の努力で変えられる項目<br>
+      外部環境とは、自社ではコントロールできない項目<br>
+      <figure class="media-figure">
+        <img src="swot.png" class="side-image">
+      </figure></dd>
+    </div>
+    <div class="item">
+      <dt>PPM<br>
+      (Product Portfolio Manegement)</dt>
+      <dd class="hidden">資源を投下すべき製品、撤退すべき製品を分析<br>
+        花形と問題児には投資を続け、金のなる木と負け犬には追加投資は不要<br>
+      <figure class="media-figure">
+        <img src="ppm.png" class="side-image">
+      </figure></dd>      
+    </div>
+    <div class="item">
+      <dt>リーダー</dt>
+      <dd class="hidden">業界トップシェアの企業</dd>
+    </div>
+    <div class="item">
+      <dt>チャレンジャー</dt>
+      <dd class="hidden">2位以下の企業。リーダーの商品やサービスと差別化する</dd>
+    </div>
+    <div class="item">
+      <dt>フォロワー</dt>
+      <dd class="hidden">リーダーの成功事例を真似する</dd>
+    </div>
+    <div class="item">
+      <dt>ニッチャー</dt>
+      <dd class="hidden">リーダーが無視するような小さな市場で戦う</dd>
+    </div>
+    <div class="item">
+      <dt>M&A<br>
+        (Mergers and Acquisitions)
+      </dt>
+      <dd class="hidden">会社を買収・合併すること</dd>
+    </div>
+    <div class="item">
+      <dt>アライアンス</dt>
+      <dd class="hidden">企業同士が提携すること</dd>
+    </div>
+    <div class="item">
+      <dt>ジョイントベンチャー</dt>
+      <dd class="hidden">複数の企業が共同出資して作った会社</dd>
+    </div>
+    <div class="item">
+      <dt>IPO<br>
+       （Initial Public Offering） 
+      </dt>
+      <dd class="hidden">新規公開株式。自社の株式を株式市場に新規に公開すること</dd>
+    </div>
+    <div class="item">
+      <dt>マーケティングミックスの4P</dt>
+      <dd class="hidden">目標達成のために自社がコントロール可能な４つの手段<br>
+        「Product」「Price」「Place」「Promotion」</dd>
+    </div>
+    <div class="item">
+      <dt>RFM分析</dt>
+      <dd class="hidden">Recency（最終購入日）・Frequency（購入頻度）・Monetary（購入金額）の3指標で顧客を評価し、優良顧客や休眠顧客などに分類してマーケティング施策に活かす手法</dd>
+    </div>
+    <div class="item">
+      <dt>オピニオンリーダー</dt>
+      <dd class="hidden">新しく出た商品をいち早く買い、その感想を友達やSNSなどに広める消費者。イノベーター理論のアーリーアダプターと同じ</dd>
+    </div>
+    <div class="item">
+      <dt>UX<br>
+      (User Experience)</dt>
+      <dd class="hidden">商品やサービスなどを実際に利用することによって得られる体験</dd>
+    </div>
+    <div class="item">
+      <dt>BSC<br>
+      （Balanced Scorecard）</dt>
+      <dd class="hidden">「財務」「顧客」「業務プロセス」「学習と成長」の4つの視点から業績評価を行う手法</dd>
+    </div>
+    <div class="item">
+      <dt>CSF<br>
+      (Critical Success Factor)</dt>
+      <dd class="hidden">重要成功要因。戦略目標を達成するために必要となる具体的な要因</dd>
+    </div>
+    <div class="item">
+      <dt>KPI<br>
+      （Key Performance Indicator）</dt>
+      <dd class="hidden">重要業績評価指標。目標達成に向けたプロセスの達成度を定量的に評価する指標</dd>
+    </div>
+    <div class="item">
+      <dt>一元管理の4兄弟（4用語）</dt>
+      <dd class="hidden"> ERP：社内の経営資源を一元管理<br>
+           SCM：社外も含めて製品情報を一元管理<br>
+           SFA：営業ノウハウを一元管理<br>
+           CRM：顧客情報を一元管理</dd>
+    </div>
+    <div class="item">
+      <dt>ERP<br>
+      (Enterprise Resource Planning)</dt>
+      <dd class="hidden">企業の持つ資源＝「ヒト」「モノ」「カネ」「情報」を一か所に集めて管理し、有効活用するという考え方</dd>
+    </div>
+    <div class="item">
+      <dt>SCM<br>
+      （Supply Chain Management）</dt>
+      <dd class="hidden">「供給連鎖管理」、原材料調達から消費者への提供までの一連の流れを企業間で最適化する。需要と供給のバランスを整え、必要な商品を必要な量・タイミングで届ける体制を構築</dd>
+    </div>
+    <div class="item">
+      <dt>SFA<br>
+      (Sales Force Automation)</dt>
+      <dd class="hidden">営業支援システム。営業部門のメンバー行動、商談の進捗状況とその結果を見える化し、営業の生産性向上や業務改善を実現するためのツール</dd>
+    </div>
+    <div class="item">
+      <dt>CRM<br>
+      (Customer Relationship Management)</dt>
+      <dd class="hidden"> 顧客情報を一元管理し、営業・マーケティング・カスタマーサポートの成果を高めるための仕組み</dd>
+    </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    
+    // 1. 全体ボタンの設定
+    let isShowAll = false;
+    const btn = document.getElementById('toggleBtn');
+    
+    if (btn) {
+      // スマホのタッチとPCのクリックの両方に対応
+      const handleToggleAll = function(e) {
+        e.preventDefault(); // タップのズレやダブル発火を防止
+        const allDd = document.querySelectorAll('dd');
+        isShowAll = !isShowAll;
+
+        allDd.forEach(dd => {
+          if (isShowAll) {
+            dd.classList.remove('hidden');
+          } else {
+            dd.classList.add('hidden');
+          }
+        });
+
+        btn.textContent = isShowAll ? "すべての説明を隠す" : "すべての説明を表示";
+      };
+
+      btn.addEventListener('touchend', handleToggleAll, { passive: false });
+      btn.addEventListener('click', handleToggleAll);
+    }
+
+    // 2. 個別の用語（dt）の設定
+    const dts = document.querySelectorAll('dt');
+    dts.forEach(dt => {
+      const handleToggleDt = function(e) {
+        // 直後のddを取得してクラスを切り替え
+        const targetDd = this.nextElementSibling;
+        if (targetDd && targetDd.tagName === 'DD') {
+          targetDd.classList.toggle('hidden');
+        }
+      };
+
+      // スマホでのタップ対応
+      dt.addEventListener('click', handleToggleDt);
+    });
+
+  });
+</script>
+
+</body>
+</html>
